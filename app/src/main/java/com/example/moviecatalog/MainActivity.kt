@@ -1,3 +1,4 @@
+package com.example.moviecatalog
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
