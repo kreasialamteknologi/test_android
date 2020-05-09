@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">MovieCatalog</string>
+    <string name="app_name">Movie Catalog</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="hint_username">Username</string>
+    <string name="text_logout">Logout</string>
+    <string name="text_backup">Backup</string>
+    <string name="text_restore">Restore</string>
 </resources>
