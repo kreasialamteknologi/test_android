@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.moviecatalog">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".modules.App"
         android:allowBackup="true"
@@ -10,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".modules.splash.SplashAct">
+        <activity
+            android:name=".modules.splash.SplashAct"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,8 +22,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".modules.main.MainAct" />
-        <activity android:name=".modules.auth.RegisterAct" />
-        <activity android:name=".modules.auth.LoginAct" />
+        <activity
+            android:name=".modules.auth.RegisterAct"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".modules.auth.LoginAct"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity android:name=".modules.backup.BackupAct" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
