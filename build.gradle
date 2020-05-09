@@ -36,4 +36,5 @@ ext {
     coil= '0.9.5'
     retrofit = '2.8.0'
     koin = '2.1.5'
+    room = '2.2.5'
 }
